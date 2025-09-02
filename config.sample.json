@@ -1,0 +1,45 @@
+{
+  "unknown_folder": "Others",
+  "exclude_dirs": [".git", "node_modules", "__pycache__"],
+  "exclude_hidden": true,
+  "prefer_extension_over_glob": true,
+  "by_extension": {
+    ".jpg": "Images",
+    ".jpeg": "Images",
+    ".png": "Images",
+    ".gif": "Images",
+    ".mp4": "Videos",
+    ".mov": "Videos",
+    ".pdf": "Documents",
+    ".docx": "Documents",
+    ".xlsx": "Spreadsheets",
+    ".csv": "Spreadsheets",
+    ".zip": "Archives",
+    ".rar": "Archives",
+    ".7z": "Archives"
+  },
+  "by_glob": {
+    "*.log": "Logs",
+    "*.bak": "Backups"
+  },
+  "by_mime": {
+    "image/": "Images",
+    "video/": "Videos",
+    "audio/": "Audio",
+    "text/": "Text"
+  },
+  "by_date": {
+    "enabled": true,
+    "base_folder": "By Date",
+    "group": "month" 
+  },
+  "size_buckets": [
+    { "max_mb": 1, "folder": "Size/Tiny" },
+    { "max_mb": 100, "folder": "Size/Medium" },
+    { "max_mb": null, "folder": "Size/Huge" }
+  ],
+  "duplicates": {
+    "action": "separate",
+    "folder": "Duplicates"
+  }
+}
